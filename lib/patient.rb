@@ -21,7 +21,7 @@ class Patient
       Appointment.new(self, doctor, date )
     end
     def doctors 
-      Appointment.map do |x| 
+      Appointment.all.map do |x| 
         x.doctor 
       end
     end 
